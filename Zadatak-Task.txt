@@ -1,0 +1,17 @@
+Napraviti konzolnu aplikaciju (WCF servis) koja nakon pokretanja uzima iz baze sve podatke...
+Napraviti WPF klijente koji nakon pokretanja prikace se na metodu koju implementira servis i povuci sve podatke iz baze, nakon povlacenja salje svoju adresu na kojoj slusa promene
+Servis na svakih nekoliko sekundi izabere jedan prekidac i promeni mu vrednost i vreme...
+Tu promenu posalje svim klijentima koju su prikaceni na njega...
+
+Videti: IComperer, Observer patern, Data Access Object...
+
+https://www.youtube.com/watch?v=YIX9Bkl3ZPE
+
+ENGLISH:
+
+Make C# console application, when this app starts it collects all data from SQLite database.
+SQLite database contains switches (ID, value, timestamp).
+Make WPF application and show all those switches. Connection between console and WPF application is WCF where console is Server and WPF Client.
+When client and server are connected, server can start to do his task. Task is to select random switch and update his value and timestamp.
+When you update switch client needs to see change.
+Point of project is to start more then one client, and all those clients should show same results.
